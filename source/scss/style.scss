@@ -1,0 +1,170 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+@import "_fonts";
+
+/*
+  Import all other blocks
+*/
+@import "_blocks/container";
+@import "_blocks/footer";
+@import "_blocks/header";
+
+/*
+  Ниже пример подключения других блоков
+
+  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
+  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+
+  Для именования селекторов давайте придерживаться стиля two dashes
+  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
+  block-name__element-name--modificator
+*/
+
+/*
+  Код ниже нужно удалить, он добавлен просто для примера
+  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
+  то он должен был бы быть в файле _blocks/coming-soon.scss
+*/
+
+.main {
+  &__group {
+    display: flex;
+  }
+  &__title {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 57px;
+    color: #070707;
+    max-width: 280px;
+  }
+  &__text {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #070707;
+    max-width: 226px;
+    margin-top: 93px;
+  }
+}
+
+.about {
+
+  &__background {
+    background-color: #F6F6F6;
+  }
+  &__title {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    color: #070707;
+    margin-top: 60px;
+    margin-bottom: 51px;
+    padding-top: 60px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    padding-bottom: 62px;
+  }
+  &__list-item {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #070707;
+    max-width: 448px;
+    display: block;
+    text-align: initial;
+    border: 2.5px solid #070707;
+    margin-top: 20px;
+    padding: 15px;  
+  }
+}
+
+// скилы
+
+.skills {
+  &__title {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    color: #070707;
+    margin-top: 60px;
+  }
+  &__tx {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #070707;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.skills {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  &__list-img {
+    margin-bottom: 20px;
+  }
+  &__list-item {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+  }
+}
+
+// Portfolio
+
+.portfolio {
+  &__background {
+    background: #F6F6F6;
+  }
+  &__title {
+    font-family: $font-gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center; 
+    color: #070707;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+}
