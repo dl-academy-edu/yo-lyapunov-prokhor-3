@@ -1,12 +1,12 @@
 // 1 задание 
 let userNumber = prompt('Введите число от 1', 0); 
-let count = 0;
- while (count < userNumber) {
-   count++;
-  if (count % 4 === 0) {
+let counter = 0;
+ while (counter < userNumber) {
+  counter++;
+  if (counter % 4 === 0) {
    continue;
-  } else if (count % 4 !== 0) {
-   console.log(count);
+  } else if (counter % 4 !== 0) {
+   console.log(counter);
   }
  }
 
@@ -43,8 +43,8 @@ let count = 0;
 
 // let rand  =  Math.floor(1 + Math.random() * 10);
 // console.log(rand);
-// let userGo = prompt(" ");
-// if (userGo === rand) {
+// let userNumber = prompt(" ");
+// if (userNumber === rand) {
 //   console.log("Yeesssssssssssss");
 // } else {
 //   userGo = prompt(" ");
