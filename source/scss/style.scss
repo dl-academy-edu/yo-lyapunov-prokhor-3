@@ -60,6 +60,14 @@
     max-width: 226px;
     margin-top: 93px;
   }
+  &__slider {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__button {
+    background: #FFFFFF;
+    border: #FFFFFF;
+  }
 }
 
 .about {
