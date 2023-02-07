@@ -1,0 +1,117 @@
+.section-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+    height: 3000px;
+    width: 100%;
+    z-index: 100;
+    background: rgba(246, 246, 246, 0.99);
+   }
+
+.container-form {
+    display: flex;
+    justify-content: center;
+}  
+
+.form-block {
+    margin-top: 150px;
+    max-width: 370px;
+    border: 2.5px solid #070707;
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    // border-radius: #070707;
+    // gap: 10px;
+//     @media (max-width:768px) {
+//      display: flex;
+//      flex-direction: column;
+//    }
+}
+.open {
+    display: block;
+}
+
+.popup__form {
+    padding: 40px 42px;
+    max-width: 370px;
+    &-labelemail {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #070707;
+    }
+    &-inputemail {
+        max-width: 290px;
+        width: 100%;
+        height: 50px;
+        border: 2.5px solid #E5E5E5;
+        margin-top: 6px;
+        padding-left: 5px;
+    }
+    &-labelpass {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #070707;
+    }
+    &-inputpass {
+        max-width: 290px;
+        width: 100%;
+        height: 50px;
+        border: 2.5px solid #E5E5E5;
+        margin-top: 6px;
+        padding-left: 5px;
+    }
+    &-tel {
+        margin-top: 20px;
+    }
+    &-email {
+        // margin-top: 41px;
+    }
+    &-button{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        border: 2.5px solid #070707;
+        border-radius: 30px;
+        padding: 10px 19px;
+        background: #FFFFFF; 
+        margin-top: 30px; 
+        cursor: pointer;
+    }
+    &-point {
+        padding-left: 3px;
+        color: #EB3617;
+    }
+    &-close {
+        background: rgba(125, 151, 218, 0.0);
+        background-image: url('../img/buttonclose.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        left: 10%;
+        cursor: pointer;
+        display: block;
+    }
+    &-close:hover {
+        opacity: 0.3;
+        transform: scale(1.4);
+        // display: none;
+    }
+
+}
+
+

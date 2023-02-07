@@ -1,34 +1,35 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-&__logo {
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    color: #070707;
-    margin-top: 33px;
-}
 &__list {
     display: flex;
-    justify-content: end;
-    margin-top: -33px;
-    margin-right: 181px;
+    gap: 20px;
+    margin-top: 33px; 
+    border-bottom: 2px solid #828282;;
+    padding-bottom: 10px;
+}
+&__li-home {
+    margin-right: auto;
 }
 &__list-item {
-    margin-left: 20px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    color: #828282; 
+    justify-content: space-around;
+}
+&__li:hover  {
+    display: block;
+    color: #828282;
+    transform: scale(1.1);
+}
+&__li:first-child a {
+    color: #070707; 
+}
+&__li:first-child:hover a {
     color: #828282;
 }
-&__line {
-    width: 1000px;
-    border: 1px solid #828282;
-    margin-top: 32px;
+&__li:hover a {
+    color: #070707; 
 }
 }

@@ -16,7 +16,9 @@
 /*
   Import all other blocks
 */
-@import "_blocks/container";
+@import "_blocks/signin";
+@import "_blocks/register";
+@import "_blocks/btnscroll";
 @import "_blocks/footer";
 @import "_blocks/header";
 
@@ -105,9 +107,34 @@
     max-width: 448px;
     display: block;
     text-align: initial;
-    border: 2.5px solid #070707;
+    // border: 2.5px solid #070707;
     margin-top: 20px;
-    padding: 15px;  
+    // padding: 15px;  
+  }
+  &__list-i {
+    border:2.5px solid #070707;
+    height:135px;
+    max-width:900px;
+    padding:15px;
+    padding-top: 5px;
+    margin-bottom: 35px;
+    position:relative;
+  }
+  &__list-i::before {
+    border:25px solid #f6f6f6 transparent;
+    border-top-color: 30px #070707;
+    position:absolute;
+    top:100%;
+    right:25px;
+    content:'';
+  }
+  &__list-i::after {
+    border:25px solid #f6f6f6 transparent;
+    border-top-color:#f6f6f6;
+    position:absolute;
+    top:100%;
+    right:25px;
+    content:'';
   }
 }
 
@@ -156,7 +183,33 @@
     text-align: center;
     color: #828282;
   }
+  &__flex-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__label {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+  }
 }
+progress {
+  -webkit-appearance: none; 
+}
+progress::-webkit-progress-bar {
+  background-color: #E5E5E5;
+  height: 9px;
+  margin-top: 7px;
+ }
+progress::-webkit-progress-value {
+  background-color: #070707;
+  height: 9px;
+ }
+
 
 // Portfolio
 
@@ -176,3 +229,5 @@
     margin-bottom: 50px;
   }
 }
+
+// modal Sign In
