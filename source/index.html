@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <title>DL Academy</title>
     <meta name="description" content="">
@@ -27,21 +28,13 @@
         <section class="main__banner">
           <div class="container">
             <div class="main__group">
-              <h1 class="main__title">Prokhor Lyapunov</h1>
+              <h1 class="main__title">Antonina Antoninovna</h1>
               <div class="main__text">Future front-end developer
                 26 years old, Tolyatti</div>
+                @@include('blocks/mobile.html')
             </div>
-            <img class="main__img" src="./img/myphoto.png" alt="myphoto" width="1000" height="465">
-            <!-- <div class="main__slider" DISPLAY FLEX>
-              <button class="main__button"><img src="./img/sliderleft.svg" alt=""></button>
-              <div class="main__buttons">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button class="main__button"><img src="./img/sliderright.svg" alt=""></button>
-              </div>
-            </div> -->
+            <!-- <img class="main__img" src="./img/myphoto.png" alt="myphoto" width="1000" height="465"> -->
+            @@include('blocks/sliderone.html')
           </div>
         </section>
 
@@ -67,7 +60,7 @@
                 <a href="#" class="skills__list-item">HTML 5</a>
                 <div>
                   <label class="skills__label" for="html">85%</label>
-                  <progress name="html"  value="85" max="100"></progress>
+                  <progress id="html"  value="85" max="100"></progress>
                 </div>
               </li>
               <li class="skills__flex-list">
@@ -75,7 +68,7 @@
                 <a href="#" class="skills__list-item">CSS/SCSS</a>
                 <div>
                   <label class="skills__label" for="html">55%</label>
-                  <progress name="html"  value="55" max="100"></progress>
+                  <progress id="css"  value="55" max="100"></progress>
                 </div>
               </li>
               <li class="skills__flex-list">
@@ -83,42 +76,46 @@
                 <a href="#" class="skills__list-item">JavaScript</a>
                 <div>
                   <label class="skills__label" for="html">5%</label>
-                  <progress name="html"  value="5" max="100"></progress>
+                  <progress id="js"  value="5" max="100"></progress>
                 </div>
                 </li>
               <li class="skills__flex-list">
                 <img class="skills__list-img" src="./img/git.png" alt="git" width="90" height="90">
                 <a href="#" class="skills__list-item">Git/GitHub</a>
                 <div><label class="skills__label" for="html">15%</label>
-                  <progress  name="html"   value="15" max="100"></progress>
+                  <progress  id="git"   value="15" max="100"></progress>
                 </div>
               </li>
               <li class="skills__flex-list">
                 <img class="skills__list-img" src="./img/figma.png" alt="figma" width="60" height="90">
                 <a href="#" class="skills__list-item">Figma</a>
                 <div><label class="skills__label" for="name">80%</label>
-                  <progress  name="html" value="80" max="100"></progress>
+                  <progress  id="figma" value="80" max="100"></progress>
               </div>
               </li>
              </ul>
           </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio">    //--> пишем сюда wrapper обертку и затем вставим сюда слайдер свипер 
           <div class="portfolio__background">
             <div class="container">
               <div class="portfolio__title">Portfolio</div>
             </div>
           </div>
         </div>
+        @@include('blocks/swiper.html')
       </main>
       @@include('blocks/footer.html')
       @@include('blocks/signin.html')
       @@include('blocks/register.html')
       @@include('blocks/btnscroll.html')
+      @@include('blocks/send.html')
     <script src="js/app.js"></script>
     <script src="js/javascript.js"></script>
     <script src="./home tusks/function.js"></script>
-    <script src="./"></script>
+    <script src="./js/sliderjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
