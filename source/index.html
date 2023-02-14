@@ -43,9 +43,9 @@
             <div class="container">
               <h2 class="about__title">About me</h2>
               <ul class="about__list">
-                <li class="about__list-i"><a href="#" class="about__list-item">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</a></li>
-                <li class="about__list-i"><a href="#" class="about__list-item">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</a></li>
-                <li class="about__list-i"><a href="#" class="about__list-item">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</a></li>
+                <li class="about__list-i"><p class="about__list-item">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p></li>
+                <li class="about__list-i"><p class="about__list-item">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p></li>
+                <li class="about__list-i"><p class="about__list-item">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</p></li>
                </ul>
             </div>
           </div>
@@ -97,14 +97,14 @@
           </div>
         </div>
 
-        <div class="portfolio">    //--> пишем сюда wrapper обертку и затем вставим сюда слайдер свипер 
+        <div class="portfolio">   
           <div class="portfolio__background">
             <div class="container">
               <div class="portfolio__title">Portfolio</div>
+              @@include('blocks/swiper.html')
             </div>
           </div>
         </div>
-        @@include('blocks/swiper.html')
       </main>
       @@include('blocks/footer.html')
       @@include('blocks/signin.html')

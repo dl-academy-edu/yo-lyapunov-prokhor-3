@@ -25,29 +25,29 @@
 	let isTouched = false;
 
 	initWidth();
-	createDot();
+	createDots();
 	setActiveSlide(1, false);
 
 	wrapper.addEventListener('touchstart', (e) => {
 		isTouched = true;
 		const touch = e.touches[0];
 		clientX = touch.clientX;
-		lastClientX = touch.clienX;
+		lastClientX = touch.clientX;
 	})
 
 	wrapper.addEventListener('touchmove', (e) => {
 		if(!isTouched) return;
 		const touch = e.touches[0];
-		lastClientX = touch.clienX;
-		setActiveSlide(activeSlideIndex, true, lastClientX - clientX);
+		lastClientX = touch.clientX;
+		setActiveSlide(activeSlideIndex, true, clientX - lastClientX); 
 	})
 
-	wrapper.addEventListener('tochend', (e) => {
+	wrapper.addEventListener('touchend', (e) => {
 		if(!isTouched) return;
 		isTouched = false;
-		if ( clientX - lastClientX > percentDiff * slideWidth ) {
+		if ( clientX - lastClientX > percentDiff * siledWidth ) {
 		  setActiveSlide(activeSlideIndex + 1);
-		} else if (lastClientX - clientX > percentDiff * slideWidth) {
+		} else if (lastClientX - clientX > percentDiff * siledWidth) {
 			setActiveSlide(activeSlideIndex - 1);
 		} else {
 			setActiveSlide(activeSlideIndex);
@@ -114,9 +114,9 @@
 	}
 	
 	function createDots() {
-		for (let i = 0; i < slidesCount; I++) {
+		for (let i = 0; i < slidesCount; i++) {
 			const dot = createDot(i);
-			dot.push(dot);
+			dots.push(dot);
 			pagination.insertAdjacentElement('beforeend', dot);
 		}
 	}
@@ -141,9 +141,9 @@
 			return;
 		}
 		checkerMouseDown = false;
-		if(clienX - e.clienX > percentDiff * siledWidth) {
+		if(clientX - e.clientX > percentDiff * siledWidth) {
 			setActiveSlide(activeSlideIndex + 1);
-		} else if (e.clientX - clientX > percentDiff * siledWidth) {
+		} else if ( e.clientX - clientX > percentDiff * siledWidth ) {
 			setActiveSlide(activeSlideIndex -1);
 		}
 	}
