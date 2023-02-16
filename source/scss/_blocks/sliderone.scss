@@ -3,9 +3,10 @@
 	margin: 0 auto;
 	user-select: none;
 	// padding: 0 20px;
-	@media (max-width: 1015px) {
-		// padding: 0 20px;
-	}
+	@media (max-width:512px) {
+		padding: 0 20px;
+	  }
+	
 }
 
 .slider {

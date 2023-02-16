@@ -18,6 +18,9 @@ const sendUp = document.querySelector('.send'); // Третий poup
 const sendOpen = document.querySelector('.footer__message-js');// Третий poup
 const sendClose = document.querySelector('.send__block-forms-js');// Третий poup
 const btnScroll = document.querySelector('.btn__scroll-js') // Кнопка скролла
+// Гамбургер!!!
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu');
 
 // Первый poup
 buttonOpen.addEventListener('click', function() {
@@ -34,6 +37,7 @@ window.addEventListener('keydown', function(event) {
         popup.classList.remove('open');
     }
 })
+
 // Второй poup
 btnOpen.addEventListener('click', function() {
     popUp.classList.add('open');
@@ -64,8 +68,6 @@ window.addEventListener('keydown', function(event) {
         popUp.classList.remove('open');
     }
 })
-
-
 
 
 // Кнопка скролла
@@ -100,4 +102,9 @@ function scrollUp() {
     })
 }
 
+// ГАМБУРГЕР
 
+menuBtn.addEventListener('click', function() {
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+})

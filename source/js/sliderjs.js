@@ -26,7 +26,7 @@
 
 	initWidth();
 	createDots();
-	setActiveSlide(1, false);
+	setActiveSlide(0, false);
 
 	wrapper.addEventListener('touchstart', (e) => {
 		isTouched = true;

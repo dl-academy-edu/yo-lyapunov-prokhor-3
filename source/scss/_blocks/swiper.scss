@@ -44,6 +44,9 @@
 .swiper-txt {
     border-bottom: 1px dashed #FFFFFF;
 }
+.swiper-text:hover {
+    transform: scale(1.1);
+  }
 
 .swiper-title {
     font-family: 'Gilroy';

@@ -23,6 +23,7 @@
 @import "_blocks/mobile";
 @import "_blocks/sliderone";
 @import "_blocks/swiper";
+@import "_blocks/myprofile";
 @import "_blocks/footer";
 @import "_blocks/header";
 
@@ -48,7 +49,7 @@
     display: flex;
     margin-top: 10px;
     gap: 40px;
-    @media (max-width:512px) {
+    @media (max-width:586px) {
       display: flex;
       flex-direction: column;
       gap: 0px;
@@ -72,9 +73,10 @@
     color: #070707;
     max-width: 226px;
     margin-top: 93px;
-    @media (max-width:512px) {
+    @media (max-width:586px) {
       margin-top: 0;
       margin-bottom: 33px;
+      max-width: 205px;
 }
   }
   &__slider {
@@ -114,6 +116,11 @@
     margin-top: -19px;
     margin-left: 48px;
     padding-bottom: 45px;
+    @media (max-width:586px) {
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+}
   }
   &__list-item {
     font-family: $font-gilroy;
@@ -136,15 +143,24 @@
   &__list-i:nth-child(1) {
     // margin-top: -20px;
     margin-left: -149px;
+    @media (max-width:586px) {
+      margin-left: 0px;
+}
   }
   &__list-i:nth-child(2) {
     margin-left: 54px;
     margin-top: -15px;
+    @media (max-width:586px) {
+      margin-left: 0px;
+}
   }
   &__list-i:nth-child(3) {
     margin-right: 149px;
         @media (max-width:799px) {
           margin-right: 130px;
+          @media (max-width:586px) {
+            margin-right: 0px;
+      }
    }
   }
   &__list-i::before {
@@ -165,9 +181,39 @@
   }
   &__list-i:nth-child(2)::before {
     right:84%;
+    @media (max-width:687px) {
+      right:83%;
+}
+    @media (max-width:478px) {
+      right:81%;
+}
+    @media (max-width:385px) {
+      right:79%;
+}
+    @media (max-width:385px) {
+     right:77%;
+}
+    @media (max-width:385px) {
+      right:75%;
+}
   }
   &__list-i:nth-child(2)::after {
     right:84%;
+    @media (max-width:687px) {
+      right:83%;
+}
+    @media (max-width:478px) {
+      right:81%;
+}
+    @media (max-width:385px) {
+      right:79%;
+}
+    @media (max-width:385px) {
+      right:77%;
+}
+    @media (max-width:385px) {
+      right:75%;
+}
   }
 
 }
@@ -210,6 +256,9 @@
       justify-content: flex-start;
       gap: 40px;
     }
+    @media (max-width: 327px) {
+      gap: 30px;
+    }
   }
   &__list-img {
     margin-bottom: 20px;
@@ -240,6 +289,9 @@
 }
 progress {
   -webkit-appearance: none; 
+  @media (max-width: 459px) {
+    max-width: 94px;
+  }
 }
 progress::-webkit-progress-bar {
   background-color: #E5E5E5;
