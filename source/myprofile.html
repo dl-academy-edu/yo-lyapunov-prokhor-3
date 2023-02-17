@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My profile</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        @@include('blocks/mobile.html')
+        <section class="profile">
+            <div class="container">
+                <h1 class="profile__title">My profile</h1>     
+                <div class="profile__group">
+                    <img src="./img/berserk.jpg" alt="myphoto" width="320" height="450">
+                    <div class="profile__user-group">
+                        <div class="profile__user-data">
+                            <ul>
+                                <li class="profile__user-item">Name:<span class="profile__user-it">Ksenia</span></li>
+                                <li class="profile__user-item">Surname:<span class="profile__user-it">Larioshkina</span></li>
+                                <li class="profile__user-item">Email:<span class="profile__user-it">larioshkina@gmail.com</span></li>
+                                <li class="profile__user-item">Password:<span class="profile__user-it">****************</span></li>
+                                <li class="profile__user-item">Location:<span class="profile__user-it">Moscow</span></li>
+                                <li class="profile__user-item">Age:<span class="profile__user-it">17</span></li>
+                            </ul>
+                        </div>
+                        <div class="profile__user-change">
+                            <ul>
+                                <li class="profile__user-link"><a href="#" class="profile__user-li"></a>Change password</li>
+                                <li class="profile__user-link"><a href="#" class="profile__user-li"></a>Change other data</li>
+                                <li class="profile__user-link"><a href="#" class="profile__user-li"></a>Delete account</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
