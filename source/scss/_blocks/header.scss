@@ -1,0 +1,38 @@
+.header {
+&__list {
+    display: flex;
+    gap: 22px;
+    margin-top: 33px; 
+    border-bottom: 2px solid #828282;;
+    padding-bottom: 30px;
+    @media (max-width:512px) {
+        display: none;
+ }
+}
+&__li-home {
+    margin-right: auto;
+}
+&__list-item {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282; 
+    justify-content: space-around;
+}
+&__li:hover  {
+    display: block;
+    color: #828282;
+    transform: scale(1.1);
+}
+&__li:first-child a {
+    color: #070707; 
+}
+&__li:first-child:hover a {
+    color: #828282;
+}
+&__li:hover a {
+    color: #070707; 
+}
+}

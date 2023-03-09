@@ -1,0 +1,18 @@
+.btn__scroll {
+    left: 5%;
+    position: fixed;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    border: none;
+    z-index: 50;
+    cursor: pointer;
+    display: block;
+    top: 0;
+}
+.btn__scroll-hidden {
+    display: none;
+}
+.circle {
+    opacity: 0;
+}

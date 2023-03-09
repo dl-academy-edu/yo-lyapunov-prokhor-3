@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/myprofile.css">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    @@include('blocks/mobile.html')
+      <main class="main">
+        <section class="main__banner">
+          <div class="container">
+            <div class="main__group">
+              <h1 class="main__title">Antonina Antoninovna</h1>
+              <div class="main__text">Future front-end developer
+                26 years old, Tolyatti</div>
+            </div>
+            <!-- <img class="main__img" src="./img/myphoto.png" alt="myphoto" width="1000" height="465"> -->
+            @@include('blocks/sliderone.html')
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="about__background">
+            <div class="container">
+              <h2 class="about__title">About me</h2>
+              <ul class="about__list">
+                <li class="about__list-i"><p class="about__list-item">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p></li>
+                <li class="about__list-i"><p class="about__list-item">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p></li>
+                <li class="about__list-i"><p class="about__list-item">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</p></li>
+               </ul>
+            </div>
+          </div>
+        </section>
+        <div class="skills">
+          <div class="container">
+            <div class="skills__title">Skills</div>
+            <div class="skills__tx">I work in such programs as</div>
+            <ul class="skills__list">
+              <li class="skills__flex-list">
+                <img class="skills__list-img" src="./img/html.png" alt="html" width="79" height="90">
+                <a href="#" class="skills__list-item">HTML 5</a>
+                <div>
+                  <label class="skills__label" for="html">85%</label>
+                  <progress id="html"  value="85" max="100"></progress>
+                </div>
+              </li>
+              <li class="skills__flex-list">
+                <img class="skills__list-img" src="./img/css.png" alt="css" width="79" height="90">
+                <a href="#" class="skills__list-item">CSS/SCSS</a>
+                <div>
+                  <label class="skills__label" for="html">55%</label>
+                  <progress id="css"  value="55" max="100"></progress>
+                </div>
+              </li>
+              <li class="skills__flex-list">
+                <img class="skills__list-img" src="./img/js.png" alt="js" width="68" height="90">
+                <a href="#" class="skills__list-item">JavaScript</a>
+                <div>
+                  <label class="skills__label" for="html">5%</label>
+                  <progress id="js"  value="5" max="100"></progress>
+                </div>
+                </li>
+              <li class="skills__flex-list">
+                <img class="skills__list-img" src="./img/git.png" alt="git" width="90" height="90">
+                <a href="#" class="skills__list-item">Git/GitHub</a>
+                <div><label class="skills__label" for="html">15%</label>
+                  <progress  id="git"   value="15" max="100"></progress>
+                </div>
+              </li>
+              <li class="skills__flex-list">
+                <img class="skills__list-img" src="./img/figma.png" alt="figma" width="60" height="90">
+                <a href="#" class="skills__list-item">Figma</a>
+                <div><label class="skills__label" for="name">80%</label>
+                  <progress  id="figma" value="80" max="100"></progress>
+              </div>
+              </li>
+             </ul>
+          </div>
+        </div>
+
+        <div class="portfolio">   
+          <div class="portfolio__background">
+            <div class="container">
+              <div class="portfolio__title">Portfolio</div>
+              @@include('blocks/swiper.html')
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('blocks/footer.html')
+      @@include('blocks/signin.html')
+      @@include('blocks/register.html')
+      @@include('blocks/btnscroll.html')
+      @@include('blocks/send.html')
+    <script src="js/app.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="./home tusks/function.js"></script>
+    <script src="./js/sliderjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

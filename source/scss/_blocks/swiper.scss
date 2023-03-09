@@ -1,0 +1,63 @@
+.swiper {
+    max-width: 1000px;
+    height: 604px;
+    margin-bottom: 20px;
+    // @media (max-width: 1015px) {
+    //     max-width: 880px;
+    //   }
+    //   @media (max-width: 886px) {
+    //     max-width: 766px;
+    //   }
+  }
+
+// размер и цвет стрелок
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #070707;
+    font-size: 70px;
+}
+// измненение точек пагинации
+.swiper-pagination-bullet-active {
+    background-color: #FFF !important;
+}
+
+.swiper-background {
+    background: rgba(7,7,7,.85);
+    display: flex;
+    position: absolute;
+    top: 76%;
+    max-width: 1000px;
+    z-index: 50;
+    width: 100%;
+}
+
+.swiper-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 31px;
+}
+.swiper-txt {
+    border-bottom: 1px dashed #FFFFFF;
+}
+.swiper-text:hover {
+    transform: scale(1.1);
+  }
+
+.swiper-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 400px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 31px;
+}
