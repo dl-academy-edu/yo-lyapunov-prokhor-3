@@ -58,6 +58,7 @@
     border: 2.5px solid #070707;
     border-radius: 30px;
     max-width: 195px;
+    cursor: pointer;
 }
 &__user-link:nth-child(2) {
     max-width: 203px;
@@ -75,3 +76,11 @@
 }
 
 }
+
+.is-invalid {
+    border-color: red;
+  }
+  
+  .is-right {
+    border-color: #03BC3C;
+  }
