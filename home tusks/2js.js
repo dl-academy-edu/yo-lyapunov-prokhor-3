@@ -1,4 +1,5 @@
 // 1 задание 
+(function () {
 let userNumber = prompt('Введите число от 1', 0); 
 let counter = 0;
  while (counter < userNumber) {
@@ -9,44 +10,44 @@ let counter = 0;
    console.log(counter);
   }
  }
+})();
+ 
+// 2 задание
+ (function () {
+     let userNumber;
+     do {
+         userNumber = prompt("Введите число для рассчта факториала");
+         console.log("введено число [" + userNumber + "]");
+     }   while (userNumber !== String(Number(userNumber)));
+     if ( userNumber === 0) {
+         return 1;
+     };
+     let factorial = 1;
+     while (userNumber > 0) {
+         factorial *= userNumber;
+         userNumber-=1;
+     };
+     console.log("факториал числа =[" + factorial + "]");
+ })();
+ 
 
-// // 2 задание факториал while
-
-// let fact = prompt('Введите число от')
-// let i = fact - 1;
-
-// while(i > 0) {
-// 	fact = fact * i;
-// 	i--;
-// }
-// console.log(fact);
-
-// // 3 задание 
-
-// let number = 4;
-// let degree = 8;
-// let result = 1;
-
-// for (let i = 0; i < degree; i++) {
-//     result = result * number;
-// }
-// console.log(result);
-
-// // 4 задание 
-// if (userNumber > 0) {
-//   console.log("Ошибок нет");
-// } else {
-//   console.log("Неверные данные");
-// }
-
-// 5 задание
-
-// let rand  =  Math.floor(1 + Math.random() * 10);
-// console.log(rand);
-// let userNumber = prompt(" ");
-// if (userNumber === rand) {
-//   console.log("Yeesssssssssssss");
-// } else {
-//   userGo = prompt(" ");
-//   }
-
+ // 3 программа
+ (function () {
+     let userNumber = prompt("Введите число возведения в степень");
+     while ( isNaN ( parseInt ( userNumber,10 ) ) ) {
+         alert ("Ошибка! Принимаются только числа!")
+         userNumber = prompt("Введите число возведения в степень");
+     };
+     let userPower = prompt("Введите степень для возведения в неё числа");
+     while ( isNaN ( parseInt ( userPower,10 ) ) ) {
+         alert ("Ошибка! Принимаются только числа!")
+         userPower = prompt("Введите степень для возведения в неё числа");
+     };
+     let answer = userNumber;
+     for (let i = 1; i < userPower; i++ ) {
+         answer *= userNumber;
+     };
+     console.log( answer );
+     console.log( userNumber+ " "+ userPower);
+     
+ })();

@@ -30,4 +30,19 @@ li {
   margin: 0;
   padding: 0;
 }
+// для валидации форм!
+.invalid-feedback {
+  color: #EB3617;
+}
 
+.right-feedback {
+  color: #03BC3C;
+}
+
+.is-invalid {
+  border-color: #EB3617;
+}
+
+.is-right {
+  border-color: #03BC3C;
+}

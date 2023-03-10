@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    @@include('blocks/mobile.html')
+    <main>
+        <section class="blog">
+            <div class="container">
+                <h1 class="blog__title">My blog</h1>
+                <form name="filterForm">
+                    <div class="blog__groups">
+                        <!-- <div class="blog__group-one"> -->
+                            <div class="blog__views">
+                                <p class="blog__views-text">Views</p>
+                                <div class="blog__views-radio">
+                                    <input class="blog__views-input" name="blog" type="radio" id="radio_1">
+                                    <label class="blog__views-label" for="radio_1"><span class="blog__views-checkmark">100-500</span></label>
+                                </div> 
+                                <div class="blog__views-radio">
+                                    <input class="blog__views-input" name="blog" type="radio" id="radio_2">
+                                    <label class="blog__views-label" for="radio_2"><span class="blog__views-checkmark">500-1000</span></label>
+                                </div> 
+                                <div class="blog__views-radio">
+                                    <input class="blog__views-input" name="blog" type="radio" id="radio_3">
+                                    <label class="blog__views-label" for="radio_3"><span class="blog__views-checkmark">1000-2000</span></label>
+                                </div> 
+                               </div>
+                               <div class="comments">
+                                <p class="comments__text">Comments</p>
+                                <input class="comments__chekbox" type="checkbox" id="number" name="color">
+                                  <label class="comments__item" for="number"><span class="comments__checkmark">0</span></label>
+                                  <input class="comments__chekbox" type="checkbox" id="num" name="color">
+                                  <label class="comments__item" for="num"><span class="comments__checkmark">0-1</span></label>
+                                  <input class="comments__chekbox" type="checkbox" id="nu" name="color">
+                                  <label class="comments__item" for="nu"><span class="comments__checkmark">1-50</span></label>
+                                </div>
+                        <!-- </div> -->
+                        <!-- <div class="blog__group-two"> -->
+                            <div class="blog__show">
+                                <p class="blog__show-text">How show?</p>
+                                <div class="blog__show-radio">
+                                    <input class="blog__show-input" name="show" type="radio" id="radio_4">
+                                    <label class="blog__show-label" for="radio_4"><span class="blog__show-checkmark">show 5</span></label>
+                                </div> 
+                                <div class="blog__show-radio">
+                                    <input class="blog__show-input" name="show" type="radio" id="radio_5">
+                                    <label class="blog__show-label" for="radio_5"><span class="blog__show-checkmark">show 10</span></label>
+                                </div> 
+                               </div>
+                               <div class="blog__sort">
+                                <p class="blog__sort-text">Sort by</p>
+                                <div class="blog__sort-radio">
+                                    <input class="blog__sort-input" name="sort" type="radio" id="radio_6">
+                                    <label class="blog__sort-label" for="radio_6"><span class="blog__sort-checkmark">date</span></label>
+                                </div> 
+                                <div class="blog__sort-radio">
+                                    <input class="blog__sort-input" name="sort" type="radio" id="radio_7">
+                                    <label class="blog__sort-label" for="radio_7"><span class="blog__sort-checkmark">title</span></label>
+                                </div> 
+                                <div class="blog__sort-radio">
+                                    <input class="blog__sort-input" name="sort" type="radio" id="radio_8">
+                                    <label class="blog__sort-label" for="radio_8"><span class="blog__sort-checkmark">views</span></label>
+                                </div> 
+                               </div>
+                               <button class="blog__sort-button">Reset</button>
+                        <!-- </div> -->
+                    </div>
+                </form>
+                
+                <div class="blog__sort-group">
+                    <input class="blog__sort-line" type="text">
+                    <button class="blog__sort-btn">Search</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/parameters.js"></script>    
+</body>
+</html>

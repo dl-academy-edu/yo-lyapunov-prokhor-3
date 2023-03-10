@@ -2,38 +2,38 @@
     <div class="send__container">
         <div class="send__block">            
 <div class="send__block-forms"> 
-    <form action="#" method="post">
+    <form action="#" method="POST" name="sendForm" novalidate>
            <div class="send__block-forms-flex">
             <div class="send__block-forms-groupone">
                 <div class="send__block-forms-name">
-                  <label class="send__block-forms-labelname" for="name">What is your name?<span class="send__block-forms-point">*</span></label>
-                  <input class="send__block-forms-inputname" type="text" id="name" name="name">
+                  <label class="send__block-forms-labelname" for="fieldOne">What is your name?<span class="send__block-forms-point">*</span></label>
+                  <input class="send__block-forms-inputname" type="text" id="fieldOne" name="nameUse" required>
                  </div>
                  <div class="send__block-forms-email">
-                  <label class="send__block-forms-labelemail" for="email">Your Email<span class="send__block-forms-point">*</span></label>
-                  <input class="send__block-forms-inputemail" type="email" id="email" name="email">
+                  <label class="send__block-forms-labelemail" for="fieldTwo">Your Email<span class="send__block-forms-point">*</span></label>
+                  <input class="send__block-forms-inputemail" type="email" id="fieldTwo" name="emailUse" required>
                  </div>
                  <div class="send__block-forms-me">
-                    <label class="send__block-forms-labelme" for="me">What do you want to discuss with me?<span class="send__block-forms-point">*</span></label>
-                    <input class="send__block-forms-inputme" type="text" id="me" name="me">
+                    <label class="send__block-forms-labelme" for="fieldThree">What do you want to discuss with me?<span class="send__block-forms-point">*</span></label>
+                    <input class="send__block-forms-inputme" type="text" id="fieldThree" name="me">
                    </div>
              </div>
              <div class="send__block-forms-grouptwo">
                  <div class="send__block-forms-subject">
-                     <label class="send__block-forms-labelsubject" for="subject">Message subject<span class="send__block-forms-point">*</span></label>
-                     <input class="send__block-forms-inputsubject" type="text" id="subject" name="subject">
+                     <label class="send__block-forms-labelsubject" for="fieldFour">Message subject<span class="send__block-forms-point">*</span></label>
+                     <input class="send__block-forms-inputsubject" type="text" id="fieldFour" name="subject" required>
                     </div>
                     <div class="send__block-forms-phone">
-                     <label class="send__block-forms-labelphone" for="phone">Your mobile phone<span class="send__block-forms-point">*</span></label>
-                     <input class="send__block-forms-inputphone" type="text" id="phone" name="phone">
+                     <label class="send__block-forms-labelphone" for="fieldFive">Your mobile phone<span class="send__block-forms-point">*</span></label>
+                     <input class="send__block-forms-inputphone" type="text" id="fieldFive" name="telephone" required>
                     </div>
              </div>
            </div>
      <div class="send__block-forms-check">
-        <input class="send__block-forms-inputcheck" type="checkbox" id="box" name="box">
-        <label class="send__block-forms-labelcheck send__block-forms-colouring" for="box"><span class="check-color">Clicking on the button, you consent to the processing of your personal data.</span></label>
-       <button class="send__block-forms-btnform" type="button">Sign up</button>
-          <button disabled class="send__block-forms-btndis" type="button">Sign up</button>
+        <input class="send__block-forms-inputcheck" type="checkbox" id="fieldSix" name="box">
+        <label class="send__block-forms-labelcheck send__block-forms-colouring" for="fieldSix"><span class="check-color">Clicking on the button, you consent to the processing of your personal data.</span></label>
+       <button class="send__block-forms-btnform" type="submit">Sign up</button>
+          <button disabled class="send__block-forms-btndis" type="submit">Sign up</button>
        </div>
     </form>
    </div>
