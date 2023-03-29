@@ -8,8 +8,11 @@
     display: none;
     height: 3000px;
     width: 100%;
-    z-index: 100;
+    z-index: 10000;
     background: rgba(246, 246, 246, 0.99);
+    @media (max-width:750px) {
+      background: #FFFFFF;
+  }
 }
 
 .send__container {
@@ -25,12 +28,15 @@
     display: flex;
     justify-content: center;    
     background: #FFFFFF;
-    // border-radius: #070707;
-    // gap: 10px;
-//     @media (max-width:768px) {
-//      display: flex;
-//      flex-direction: column;
-//    }
+    @media (max-width:750px) {
+      border: none;
+      background: none;
+  }
+
+    @media (max-width: 338px) {
+      margin-left: -44px;
+}
+
 }
 .open {
     display: block;
@@ -40,6 +46,10 @@
     padding: 40px 42px;
     max-width: 680px;
     width: 100%;
+    @media (max-width: 646px) {
+      display: flex;
+      flex-direction: column;
+  }
     &-labelname {
         font-family: 'Gilroy';
         font-style: normal;
@@ -139,6 +149,10 @@
         border: 2.5px solid #E5E5E5;
         margin-top: 6px;
         padding-left: 5px;
+        @media (max-width: 646px) {
+          max-width: 290px;
+          height: 50px;
+      }
     }
     &-me {
         margin-top: 20px;
@@ -149,6 +163,10 @@
     &-flex {
         display: flex;
         gap: 55px;
+        @media (max-width: 646px) {
+          flex-direction: column;
+          gap: 0;
+      }
     }
     &-button{
         font-family: 'Gilroy';
@@ -179,6 +197,12 @@
         left: 5%;
         cursor: pointer;
         display: block;
+        @media (max-width:758px) {
+          left: -90%;
+  }
+        @media (max-width: 338px) {
+          left: -80%;
+}
     }
     &-close:hover {
         opacity: 0.3;
@@ -318,4 +342,12 @@
 
 .send__block-forms-check {
     margin-top: 22px;
+}
+
+.is-invalid {
+  border-color: red;
+}
+
+.is-right {
+  border-color: #03BC3C;
 }
